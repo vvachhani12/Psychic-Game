@@ -16,7 +16,7 @@ var userChar = [];
 
 //Random formula to generate the first random letter
 computerGuess = computerChar[Math.floor(Math.random() * computerChar.length)];
-console.log("Computer Guess is "+computerGuess);
+//console.log("Computer Guess is "+computerGuess);
 
 //Var to store the user input
 document.onkeyup = function(event){
