@@ -18,8 +18,6 @@ var userChar = [];
 computerGuess = computerChar[Math.floor(Math.random() * computerChar.length)];
 console.log("Computer Guess is "+computerGuess);
 
-
-
 //Var to store the user input
 document.onkeyup = function(event){
     var keyPressed = event.key;
@@ -28,13 +26,13 @@ document.onkeyup = function(event){
     if(computerChar.includes(keyPressed)) {
         //if the user is pressing the same key again then show an alert
         if(userChar.includes(keyPressed)){
-            console.log("exist");
+            //console.log("exist");
             alert("You already have guessed the key "+keyPressed);            
         }
         else {            
         //store the user input to the variable array
             userChar.push(keyPressed);
-            console.log("array value "+userChar)  
+            //console.log("array value "+userChar)  
             if((computerGuess !== keyPressed)){
                 guessRemaining--;
             }   
@@ -43,7 +41,7 @@ document.onkeyup = function(event){
     else{
         //if the key pressed is not a letter then throw an alert
         alert("You pressed a key that is not a letter")
-        console.log("You pressed a key that is not a letter");
+        //console.log("You pressed a key that is not a letter");
     }
             
     //for loop to display each character stored in the array
@@ -60,7 +58,7 @@ document.onkeyup = function(event){
 
         //Random formula to iterate through the array of letters to chose random letter
         computerGuess = computerChar[Math.floor(Math.random() * computerChar.length)];
-        console.log("New Computer Guess: "+computerGuess);        
+        //console.log("New Computer Guess: "+computerGuess);        
     } 
     //checking if the guess remaining is 0 then reset everything and increase the number of loss
     else if(guessRemaining === 0){
@@ -69,7 +67,7 @@ document.onkeyup = function(event){
         userChar = [];
         userGuessText.textContent = userChar;       
         computerGuess = computerChar[Math.floor(Math.random() * computerChar.length)];
-        console.log("New Computer Guess: "+computerGuess);
+        //console.log("New Computer Guess: "+computerGuess);
     }      
             
     //display the Wins, Losses, and Remaining Guess 
