@@ -15,58 +15,6 @@
         <p>Guess Left: <span id="guess-Left">9</span></p>
         <p>Your Guess so far: <span id="user-Guess"></span></p>
     </div>
-    
-    <script type="text/javascript">
-        // //get the id's which needs to be replaced with the input
-        // var winsText = document.getElementById("wins");
-        // var lossesText = document.getElementById("losses");
-        // var guessLeft = document.getElementById("guess-Left");
-        // var userGuessText = document.getElementById("user-Guess");
-                
-        // //Define variables
-        // var Losses = 0;
-        // var Win = 0;
-        // var guessRemaining = 9;
-
-        // //Array of all the letters that computer can randomly pick and blank array of user input
-        // var computerChar = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-        // var userChar = [];
-
-        // //Var to store the user input
-        // document.onkeyup = function(event){
-        //     var keyPressed = event.key;
-                    
-        //     //Display the variable user input
-        //     userChar.push(keyPressed);
-                    
-        //     //for loop to display each character stored in the array
-        //     for (var i=0; i<userChar.length; i++){
-        //         userGuessText.textContent = userChar;
-        //     }
-
-        //     //Random formula to iterate through the array of letters to chose random letter
-        //     var computerGuess = computerChar[Math.floor(Math.random() * computerChar.length)];
-                    
-        //     //check if the user input matches the computer character
-        //     if(guessRemaining === 1){
-        //         Losses++;
-        //         guessRemaining = 9;
-        //         userChar = [];
-        //         userGuessText.textContent = userChar;
-        //     }
-        //     else if((computerGuess !== keyPressed)){
-        //         guessRemaining--;
-        //     }
-        //     else if((computerGuess === keyPressed)){
-        //         Win++;
-        //     }      
-                    
-        //     //display the Wins, Losses, and Remaining Guess 
-        //     winsText.textContent = Win;
-        //     lossesText.textContent = Losses;
-        //     guessLeft.textContent = guessRemaining;
-        //     }
-    </script>
-        <script src="./assets/javascript/game.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
